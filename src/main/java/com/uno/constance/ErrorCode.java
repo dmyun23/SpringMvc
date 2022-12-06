@@ -11,7 +11,7 @@ import java.util.function.Predicate;
 @Getter
 @RequiredArgsConstructor
 public enum ErrorCode {
-    ok(0, ErrorCategory.NORNAL, "OK"),
+    OK(0, ErrorCategory.NORNAL, "OK"),
 
     BAD_REQUEST(10000, ErrorCategory.CLIENT_SIDE, "Bad request"),
     SPRING_BAD_REQUEST(10001, ErrorCategory.CLIENT_SIDE, "Spring-detected bad request"),

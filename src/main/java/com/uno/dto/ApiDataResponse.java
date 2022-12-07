@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @ToString
 @EqualsAndHashCode(callSuper = true)
-public class ApiDataResponse<T> extends  ApiErrorResponse {
+public class ApiDataResponse<T>  extends  ApiErrorResponse {
 
     private final T data;
 
@@ -18,7 +18,11 @@ public class ApiDataResponse<T> extends  ApiErrorResponse {
         this.data = data;
     }
 
-    public static <T> ApiDataResponse<T> of(T data) {
+    public static <T> ApiDataResponse <T> of(T data) {
         return new ApiDataResponse(data);
+    }
+
+    public static <T> ApiDataResponse <T> empty(){
+        return new ApiDataResponse(null);
     }
 }

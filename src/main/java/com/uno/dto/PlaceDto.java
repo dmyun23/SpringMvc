@@ -15,7 +15,6 @@ public class PlaceDto {
     private Integer capacity;
     private String memo;
 
-
     public static PlaceDto of(PlaceType placeType, String placeName, String address,
                               String phoneNumber, Integer capacity, String memo)
     {
